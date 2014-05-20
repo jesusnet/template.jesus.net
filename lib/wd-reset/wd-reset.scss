@@ -1,0 +1,57 @@
+/* === wd-reset === */
+ 
+a, abbr, acronym, address, applet, area, article, aside, audio, b, base, basefont, bdo, big, blockquote, body, br, button, canvas, caption, center, cite, code, colgroup, command, datalist, dd, del, details, dfn, dir, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, frameset, footer, h1, h2, h3, h4, h5, h6, head, header, hgroup, hr, html, i, iframe, img, input, ins, keygen, kbd, label, legend, li, link, map, mark, menu, meta, meter, nav, noframes, noscript, object, ol, optgroup, option, output, p, param, pre, progress, q, rp, rt, ruby, s, samp, script, section, select, small, source, span, strike, strong, style, sub, summury, sup, table, tbody, td, textarea, tfoot, th, thead, time, title, tr, tt, u, ul, var, video, wbr, xmp {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: none;
+	font-weight: normal;
+	text-align: left;
+	line-height: 1;
+	text-decoration: none;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+	vertical-align: bottom;
+}
+
+input[type=button], input[type=submit],button {
+	cursor: pointer;
+}
+
+strong {
+	font-weight: bold;
+}
+
+img {
+	display: block;
+	height: auto;
+}
