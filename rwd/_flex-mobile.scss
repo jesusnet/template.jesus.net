@@ -1,0 +1,97 @@
+header {
+	height: auto;
+
+	#logo {
+		float: none;
+	}
+
+	nav {
+		width: 100%;
+
+		.rwd-nav {
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			background: lighten($grey-dark, 20%) url('../images/sprites.png') no-repeat 10px 10px;
+			width: 25px;
+			height: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			text-indent: -99999px;
+		}
+
+		ul {
+			position: relative;
+			width: 100%;
+			background-color: $grey-dark;
+			float: none;
+			display: none;
+
+			li {
+				display: block;
+				width: 100%;
+				text-align: center;
+				float: none;
+				margin: 0;
+				height: auto;
+
+				a {
+					text-align: center;
+				}
+
+				ul {
+					float: none;
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					display: block;
+					background-color: lighten($grey-dark, 20%);
+
+					li {
+						float: none;
+						width: 100%;
+
+						a {
+							margin: 0;
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.four-columns {
+	width: 100%;
+	margin-right: 0;
+
+	&:last-child, &.last {
+		margin-right: 0;
+	}
+
+	&.last-rwd {
+		margin-right: 0;
+	}
+}
+
+.two-columns {
+	margin-right: 0;
+
+	&.half {
+		width: 100%;	
+	}
+
+	&.small {
+		width: 100%;
+	}
+
+	&.big {
+		width: 100%;
+	}
+}
+
+.three-columns {
+	margin-right: 0;
+	width: 100%;
+}

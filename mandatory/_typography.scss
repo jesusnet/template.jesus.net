@@ -1,0 +1,28 @@
+/* --------- TYPOGRAPHY --------- */
+
+body {
+	font-size: 16px;
+	color: $grey_dark;
+	font-family: $source_sans_pro-regular;
+}
+
+h3 {
+	font-family: $source_sans_pro-bold;
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 0 6px 0;
+	text-transform: uppercase;
+}
+
+h4 {
+
+}
+
+.content {
+
+	p { 
+		font-size: 16px;
+		line-height: 1.6;
+		margin-bottom: $gutter;
+	}
+}

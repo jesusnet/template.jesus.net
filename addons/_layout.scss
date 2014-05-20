@@ -1,0 +1,73 @@
+/* --------- LAYOUT --------- */
+
+.container {
+	width: 100%;
+}
+
+#wrapper {
+	@include outer-container;
+}
+
+.columns {
+	@extend #wrapper;
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+}
+
+.single-column {
+	@include span-columns(12);
+
+	&.small {
+		@include span-columns(6);
+		@include shift(3);
+	}
+	
+	&.medium {
+		@include span-columns(8);
+		@include shift(2);
+	}
+}
+
+.two-columns {
+	@include span-columns(6);
+
+	&.small {
+		@include span-columns(4);
+	}
+
+	&.big {
+		@include span-columns(8);
+	}
+
+	&:last-child, &.last {
+	}
+}
+
+.three-columns {
+	@include span-columns(4);
+
+	&:last-child, &.last {
+	}
+}
+
+.four-columns {
+	@include span-columns(3);
+
+	&:last-child, &.last {
+	}
+}
+
+.special {
+	background: $color-main;
+	padding: $gutter 0;
+
+	p {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 22px;
+		line-height: 1.8;
+		color: #fff;
+	}
+}
+

@@ -1,0 +1,76 @@
+/* --------- HEADER --------- */
+
+header {
+	width: 100%;
+	height: 50px;
+	background-color: $grey_dark;
+	color: $grey_light;
+
+	nav {
+		@extend #wrapper;
+	}
+
+	#logo {
+		display: block;
+		width: 188px;
+		height: 50px;
+		background: url(../images/sprites.png) no-repeat -14px -20px;
+		text-indent: -9999px;
+		float: left;
+	}
+
+	ul {
+		float: right;
+
+		li {
+			float: left;
+			margin: 0 0 0 20px;
+			line-height: 50px;
+			height: 50px;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-family: $source_sans_pro-regular;
+			color: #fff;
+
+			&:hover {
+
+				ul {
+					display: block;
+				}
+			}
+		}
+
+		a {
+			line-height: 50px;
+			height: 50px;
+			color: #fff;
+			display: block;
+
+			&:hover {
+				color: $color_main;
+			}
+		}
+
+		ul {
+			position: absolute;
+			background: $grey_dark;
+			z-index: 100;
+			margin-left: -20px;
+			padding: 0 0 10px 0;
+			display: none;
+
+			li {
+				line-height: 30px;
+				height: 30px;
+				clear: both;
+				padding: 0 20px;
+				margin: 0;
+			}
+
+			a {
+				line-height: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/* --------- IMAGE --------- */
+
+.main-image {
+	position: relative;
+
+	&.small {
+		@extend #wrapper;
+
+		div {
+			left: $gutter*2;
+			width: 40%;
+		}
+	}
+
+	&.full {
+
+		div {
+			width: 100%;
+
+			p {
+				@extend #wrapper;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	div {
+		position: absolute;
+		top: $gutter*3;
+		left: 0;
+
+		p {
+			margin-bottom: $gutter;
+			font-size: 22px;
+			line-height: 1.5;
+			color: #fff;
+			text-shadow: rgba(#000, 0.2) 1px 1px;
+		}
+	}
+}

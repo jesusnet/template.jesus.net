@@ -1,0 +1,25 @@
+/* --------- CALL TO ACTION --------- */
+
+.cta {
+	background: $color_main;
+	color: $grey_light;
+	display: block;
+	padding: 0px 22px;
+	font-family: $source_sans_pro-regular;
+	font-size: 18px;
+	line-height: 38px;
+	display: inline-block;
+	@include transition(all 0.2s ease-in-out);
+
+	&.full {
+		width: 100%;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		text-align: center;
+	}
+	
+	&:hover {
+		background-color: lighten($color_main, 10%);
+		color: #fff;
+	}
+}

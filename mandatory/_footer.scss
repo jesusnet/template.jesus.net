@@ -1,0 +1,95 @@
+/* --------- FOOTER --------- */
+
+.footer {
+	width: 100%;
+	background-color: $grey_dark;
+	color: $grey_light;
+	padding: $gutter 0;
+	text-align: center;
+
+	ul {
+		@include clearfix;
+		@include inline-block;
+		text-align: center;
+		width: auto;
+		margin: 0 auto;
+
+		&.simple {
+
+			li {
+				float: left;
+				margin-right: $gutter;
+
+				&:after {
+					content: '|';
+					margin-left: $gutter;
+				}
+
+				&:last-child:after {
+					content: '';
+					margin: 0;
+				}
+			}
+		}
+
+		ul {
+			
+			li {
+				border-bottom: 1px solid #434343;
+
+				a {
+					display: block;
+					padding: 7px 0;
+					color: white;
+					text-transform: uppercase;
+					font-size: 13px;
+					@include transition(all 0.2s ease-in-out);
+
+					&:hover {
+						color: $color-main;
+					}
+				}
+			}
+		}
+	}
+
+	
+
+	a {
+		color: white;
+
+		&:hover {
+			color: $color-main;
+		}
+	}
+
+	.partners {
+		@include inline-block;
+		
+		span {
+			float: left;
+			padding: 0 $gutter;
+			line-height: 40px;
+			font-size: 14px;
+		}
+
+		a {
+			float: left;
+
+			&#cfch {
+				background: url(../images/sprites.png) no-repeat -18px -148px;
+				width: 93px;
+				height: 40px;
+				text-indent: -9999px;
+			}
+
+			&#jesus_net {
+				background: url(../images/sprites.png) no-repeat -18px -94px;
+				width: 150px;
+				height: 33px;
+				text-indent: -9999px;
+				margin-top: 3px;
+			}
+		}
+	}
+}

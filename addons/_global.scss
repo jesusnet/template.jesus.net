@@ -1,0 +1,13 @@
+/* --------- GLOBAL --------- */
+
+body {
+	height: 100%;
+}
+
+a {
+	color: $color_main;
+}
+
+a:hover {
+	color: lighten($color_main, 20%);
+}

@@ -1,0 +1,50 @@
+/* === Includes === */
+
+@import 'includes/variables'; // include all variables
+
+@import 'lib/bourbon/app/assets/stylesheets/bourbon'; // include bourbon
+@import 'lib/neat/app/assets/stylesheets/neat'; // include neat
+@import 'lib/wd-reset/wd-reset'; // include neat
+
+
+/* === Additional Elements === */
+
+@import 'addons/fonts'; // include web fonts
+
+@import 'addons/global'; // global elements
+
+@import 'addons/layout'; // layout
+
+@import 'addons/forms'; // forms
+
+
+/* === Mandatory Elements === */
+
+@import 'mandatory/header'; // header
+
+@import 'mandatory/footer'; // footer
+
+@import 'mandatory/typography'; // typography
+
+@import 'mandatory/headline'; // headline
+
+@import 'mandatory/introduction'; // introduction
+
+@import 'mandatory/image'; // image
+
+@import 'mandatory/calltoaction'; // call to action
+
+
+/* === RWD === */
+
+@media only screen and (max-width : 980px) {
+	@import 'rwd/flex-big';
+}
+
+@media only screen and (max-width : 800px) {
+	@import 'rwd/flex-medium';
+}
+
+@media only screen and (max-width : 600px) {
+	@import 'rwd/flex-mobile';
+}

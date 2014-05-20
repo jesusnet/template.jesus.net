@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'jesus-net';
+	src:url('fonts/jesus-net.eot');
+	src:url('fonts/jesus-net.eot?#iefix') format('embedded-opentype'),
+		url('fonts/jesus-net.woff') format('woff'),
+		url('fonts/jesus-net.ttf') format('truetype'),
+		url('fonts/jesus-net.svg#jesus-net') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'jesus-net';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-logo, .icon-logo_footer {
+	font-family: 'jesus-net';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-logo:before {
+	content: "\e000";
+}
+.icon-logo_footer:before {
+	content: "\e001";
+}
