@@ -19,7 +19,7 @@
 	}
 	
 	&:hover {
-		background-color: lighten($color_main, 10%);
+		opacity: 0.8;
 		color: #fff;
 	}
 }

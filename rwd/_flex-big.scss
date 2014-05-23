@@ -1,3 +1,19 @@
 #wrapper {
 	width: 96%;
 }
+
+.main-image {
+
+	&.full {
+
+		div {
+			left: 2%;
+			margin-left: 0;
+			top: $gutter*2;
+
+			.cta {
+				margin-top: 20px;
+			}
+		}
+	}
+}

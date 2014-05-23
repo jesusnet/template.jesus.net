@@ -15,11 +15,16 @@
 	&.full {
 
 		div {
-			width: 100%;
+			@extend #wrapper;
+			left: 50%;
+			margin-left: -($max-width/2);
 
 			p {
-				@extend #wrapper;
-				margin: 0 auto;
+				@include span-columns(6);
+			}
+
+			.cta {
+				margin-top: 20px;
 			}
 		}
 	}

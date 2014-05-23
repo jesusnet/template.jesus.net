@@ -1,19 +1,44 @@
 .four-columns {
-	width: 49%;
-	margin-right: 2%;
-
-	&.second {
-		margin-right: 0;
-	}
+	@include span-columns(6);
+	@include omega(2n);
 }
 
 .single-column {
 
 	&.small {
 		width: 96%;
+		margin: 0px;
+		padding: 0 20%;
 	}
 	
 	&.medium {
 		width: 96%; 
+		margin: 0px;
+		padding: 0 10%;
+	}
+}
+
+.footer_menu_bottom {
+
+	li {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+}
+
+.special {
+
+	p {
+		width: 80%;
+	}
+}
+
+.main-image {
+	overflow: hidden;
+
+	img {
+		height: 150%;
+		width: auto;
+		margin-left: -10%;
 	}
 }

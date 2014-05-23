@@ -1,59 +1,36 @@
 /* --------- FOOTER --------- */
 
-.footer {
+footer {
 	width: 100%;
 	background-color: $grey_dark;
 	color: $grey_light;
 	padding: $gutter 0;
 	text-align: center;
 
-	ul {
-		@include clearfix;
-		@include inline-block;
+	.simple {
 		text-align: center;
-		width: auto;
-		margin: 0 auto;
-
-		&.simple {
-
-			li {
-				float: left;
-				margin-right: $gutter;
-
-				&:after {
-					content: '|';
-					margin-left: $gutter;
-				}
-
-				&:last-child:after {
-					content: '';
-					margin: 0;
-				}
-			}
-		}
-
+		display: block;
+		
 		ul {
-			
-			li {
-				border-bottom: 1px solid #434343;
+			text-align: center;
+		}
 
-				a {
-					display: block;
-					padding: 7px 0;
-					color: white;
-					text-transform: uppercase;
-					font-size: 13px;
-					@include transition(all 0.2s ease-in-out);
+		li {
+			display: inline-block;
+			margin-right: $gutter;
+			margin-bottom: $gutter;
 
-					&:hover {
-						color: $color-main;
-					}
-				}
+			&:after {
+				content: '|';
+				margin-left: $gutter;
+			}
+
+			&:last-child:after {
+				content: '';
+				margin: 0;
 			}
 		}
-	}
-
-	
+	}	
 
 	a {
 		color: white;
@@ -62,34 +39,53 @@
 			color: $color-main;
 		}
 	}
+}
 
-	.partners {
-		@include inline-block;
-		
-		span {
-			float: left;
-			padding: 0 $gutter;
-			line-height: 40px;
-			font-size: 14px;
-		}
+.footer_menu_bottom {
+	text-align: center;
+	width: auto;
+	margin: 0 auto;	
+
+	li {
+		border-bottom: 1px solid #434343;
+		@include span-columns(3);
+		@include omega(4n);
 
 		a {
-			float: left;
+			display: block;
+			padding: 7px 0;
+			color: white;
+			text-transform: uppercase;
+			font-size: 13px;
+			@include transition(all 0.2s ease-in-out);
 
-			&#cfch {
-				background: url(../images/sprites.png) no-repeat -18px -148px;
-				width: 93px;
-				height: 40px;
-				text-indent: -9999px;
+			&:hover {
+				color: $color-main;
 			}
+		}
+	}
+}
 
-			&#jesus_net {
-				background: url(../images/sprites.png) no-repeat -18px -94px;
-				width: 150px;
-				height: 33px;
-				text-indent: -9999px;
-				margin-top: 3px;
-			}
+.partners {
+	@include inline-block;
+
+	span {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 $gutter;
+		line-height: 40px;
+		font-size: 14px;
+	}
+
+	a {
+		display: inline-block;
+		vertical-align: top;
+		&#jesus_net {
+			background: url(../images/sprites.png) no-repeat -18px -94px;
+			width: 150px;
+			height: 33px;
+			text-indent: -9999px;
+			margin-top: 3px;
 		}
 	}
 }

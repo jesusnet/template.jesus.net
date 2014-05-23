@@ -10,8 +10,14 @@
 
 .columns {
 	@extend #wrapper;
-	margin-top: $gutter;
-	margin-bottom: $gutter;
+}
+
+.element {
+	padding-top: 50px;
+}
+
+.no-padding {
+	padding-top: 0px;
 }
 
 .single-column {
@@ -60,6 +66,7 @@
 .special {
 	background: $color-main;
 	padding: $gutter 0;
+	text-align: center;
 
 	p {
 		width: 50%;
@@ -68,6 +75,17 @@
 		font-size: 22px;
 		line-height: 1.8;
 		color: #fff;
+	}
+
+	.cta {
+		background-color: white;
+		color: black;
+
+		&:hover {
+			background-color: #f1f1f1;
+			color: $color-main;
+			opacity: 1;
+		}
 	}
 }
 
