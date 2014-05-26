@@ -13,11 +13,23 @@
 	}
 
 	&.full {
-
-		.txt {
+		.txt_container {
 			@extend #wrapper;
-			left: 50%;
-			margin-left: -($max-width/2);
+			position: relative;
+		}
+		.txt {
+			left: 0px;
+			top: 0;
+			position: absolute;
+			width: 100%;
+
+			p {
+				margin-bottom: $gutter;
+				font-size: 22px;
+				line-height: 1.5;
+				color: #fff;
+				text-shadow: rgba(#000, 0.2) 1px 1px;
+			}
 
 			div {
 				@include span-columns(6);
@@ -63,19 +75,5 @@
 
 	img {
 		width: 100%;
-	}
-
-	.txt {
-		position: absolute;
-		top: 0;
-		left: 0;
-
-		p {
-			margin-bottom: $gutter;
-			font-size: 22px;
-			line-height: 1.5;
-			color: #fff;
-			text-shadow: rgba(#000, 0.2) 1px 1px;
-		}
 	}
 }

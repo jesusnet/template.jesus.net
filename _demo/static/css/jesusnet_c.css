@@ -87,11 +87,11 @@ a:hover {
 .container {
   width: 100%; }
 
-#wrapper, .columns, header nav, .main-image.small, .main-image.full .txt {
+#wrapper, .columns, header nav, .main-image.small, .main-image.full .txt_container {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  #wrapper:after, .columns:after, header nav:after, .main-image.small:after, .main-image.full .txt:after {
+  #wrapper:after, .columns:after, header nav:after, .main-image.small:after, .main-image.full .txt_container:after {
     content: "";
     display: table;
     clear: both; }
@@ -463,9 +463,19 @@ h6 {
   .main-image.small .txt {
     left: 3.236em;
     width: 40%; }
+  .main-image.full .txt_container {
+    position: relative; }
   .main-image.full .txt {
-    left: 50%;
-    margin-left: -34em; }
+    left: 0px;
+    top: 0;
+    position: absolute;
+    width: 100%; }
+    .main-image.full .txt p {
+      margin-bottom: 1.618em;
+      font-size: 22px;
+      line-height: 1.5;
+      color: #fff;
+      text-shadow: rgba(0, 0, 0, 0.2) 1px 1px; }
     .main-image.full .txt div {
       float: left;
       display: block;
@@ -493,16 +503,6 @@ h6 {
           text-align: right; }
   .main-image img {
     width: 100%; }
-  .main-image .txt {
-    position: absolute;
-    top: 0;
-    left: 0; }
-    .main-image .txt p {
-      margin-bottom: 1.618em;
-      font-size: 22px;
-      line-height: 1.5;
-      color: #fff;
-      text-shadow: rgba(0, 0, 0, 0.2) 1px 1px; }
 
 /* --------- CALL TO ACTION --------- */
 .cta, form.jn input[type=submit] {
@@ -527,7 +527,7 @@ h6 {
 
 /* === RWD === */
 @media only screen and (max-width: 980px) {
-  #wrapper, .columns, header nav, .main-image.small, .main-image.full .txt {
+  #wrapper, .columns, header nav, .main-image.small, .main-image.full .txt_container {
     width: 96%; }
 
   .main-image.full .txt {
