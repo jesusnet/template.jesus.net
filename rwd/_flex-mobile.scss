@@ -122,10 +122,9 @@ header {
 
 	&.full {
 
-		div {
-			top: $gutter;
-
-			p {
+		.txt {
+			
+			div {
 				@include span-columns(8);
 			}
 		}
@@ -136,17 +135,6 @@ header {
 
 	p {
 		width: 100%;
-	}
-}
-
-.footer_menu_bottom {
-
-	li {
-		@include span-columns(12);
-
-		a {
-			text-align: center;
-		}
 	}
 }
 

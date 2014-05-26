@@ -41,31 +41,6 @@ footer {
 	}
 }
 
-.footer_menu_bottom {
-	text-align: center;
-	width: auto;
-	margin: 0 auto;	
-
-	li {
-		border-bottom: 1px solid #434343;
-		@include span-columns(3);
-		@include omega(4n);
-
-		a {
-			display: block;
-			padding: 7px 0;
-			color: white;
-			text-transform: uppercase;
-			font-size: 13px;
-			@include transition(all 0.2s ease-in-out);
-
-			&:hover {
-				color: $color-main;
-			}
-		}
-	}
-}
-
 .partners {
 	@include inline-block;
 

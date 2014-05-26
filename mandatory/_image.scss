@@ -6,7 +6,7 @@
 	&.small {
 		@extend #wrapper;
 
-		div {
+		.txt {
 			left: $gutter*2;
 			width: 40%;
 		}
@@ -14,17 +14,49 @@
 
 	&.full {
 
-		div {
+		.txt {
 			@extend #wrapper;
 			left: 50%;
 			margin-left: -($max-width/2);
 
-			p {
+			div {
 				@include span-columns(6);
-			}
 
-			.cta {
-				margin-top: 20px;
+				&.left {
+					float: left;
+				}
+
+				&.center {
+					@include shift(3);
+				}
+
+				&.right {
+					float: right;
+				}
+
+				&.top {
+					margin-top: $gutter*3;	
+				}
+
+				&.middle {
+					top:0px;
+				}
+
+				&.t_center {
+					text-align: center;
+
+					p {
+						text-align: center;
+					}
+				}
+
+				&.t_right {
+					text-align: right;
+					
+					p {
+						text-align: right;
+					}
+				}
 			}
 		}
 	}
@@ -33,9 +65,9 @@
 		width: 100%;
 	}
 
-	div {
+	.txt {
 		position: absolute;
-		top: $gutter*3;
+		top: 0;
 		left: 0;
 
 		p {
